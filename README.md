@@ -16,14 +16,15 @@ A simple, customizable password generator built with Python. This command-line t
 ## Demo
 
 ```bash
-$ python password_generator.py
+$ python main.py
 Enter password length: 12
-Include uppercase letters? (y/n): y
-Include lowercase letters? (y/n): y
-Include numbers? (y/n): y
-Include symbols? (y/n): n
 
-Generated password: Ab2dEf7hQr3w
+Should password contain upper case characters? (y/n): y
+Should password contain lower case characters? (y/n): y
+Should password contain symbols (y/n): y
+Should password contain digits (y/n): y
+
+Generated password: @$xgwRwzAa0z
 ```
 
 ## How It Works

@@ -56,19 +56,21 @@ Generated password: Ab2dEf7hQr3w
 import random
 import string
 
-def generate_password(length, use_upper, use_lower, use_digits, use_symbols):
+def generate_password(length, use_upper, use_lower, use_symbols, use_digits):
     characters = ''
     if use_upper:
         characters += string.ascii_uppercase
     if use_lower:
         characters += string.ascii_lowercase
-    if use_digits:
-        characters += string.digits
     if use_symbols:
         characters += string.punctuation
+    if use_digits:
+        characters += string.digits
+
     if not characters or length < 1:
-        return "Invalid input. Please choose options and a length greater than 0."
-    password = ''.join(random.choice(characters) for _ in range(length))
+        return "Please choose length more than 0."
+    
+    password = ''.join(random.choice(characters)for _ in range(length))
     return password
 ```
 

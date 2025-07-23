@@ -17,6 +17,7 @@ A simple, customizable password generator built with Python. This command-line t
 
 ```bash
 $ python main.py
+
 Enter password length: 12
 
 Should password contain upper case characters? (y/n): y

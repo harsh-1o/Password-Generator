@@ -31,6 +31,6 @@ use_symbol = input("Should password contain symbols (y/n): ") == 'y'
 use_digit = input("Should password contain digits (y/n): ") == 'y'
 
 # Generate password
-result = generate_password(length, use_upper, use_lower, use_digit, use_symbol
+result = generate_password(length, use_upper, use_lower, use_digit, use_symbol)
 print("Generated password:", result)
 
